@@ -1,0 +1,16 @@
+.react-multiple-carousel__arrow {
+  position: absolute !important;
+  outline: 0 !important;
+  transition: all 0.5s !important;
+  border-radius: 35px !important;
+  z-index: 1000 !important;
+  border: 0 !important;
+  background: #2db28a !important;
+  min-width: 43px !important;
+  min-height: 43px !important;
+  opacity: 0.8 !important;
+  cursor: pointer !important;
+}
+.react-multiple-carousel__arrow:hover {
+  opacity: 1 !important;
+}
