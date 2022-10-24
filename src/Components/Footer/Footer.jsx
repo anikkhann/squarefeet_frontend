@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import facebook from "../../Assets/social_icon/facebook.png";
 import instagram from "../../Assets/social_icon/instagram.png";
 import linkedIn from "../../Assets/social_icon/linkedIn.png";
@@ -9,7 +10,10 @@ const Footer = () => {
   return (
     //
 
-    <div className="relative  bg-[#333333] max-w-5xl my-0 mx-auto float-none mt-16" id="#footer">
+    <div
+      className="relative  bg-[#333333] max-w-5xl my-0 mx-auto float-none mt-16"
+      id="#footer"
+    >
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
         preserveAspectRatio="none"
@@ -47,19 +51,21 @@ const Footer = () => {
               <div className="flex flex-col justify-between pt-5 pb-10 sm:flex-row">
                 <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                   <a
-                    href="/"
+                    href="https://www.facebook.com/squarefeet.xyz"
+                    target="_blank"
                     className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
                   >
                     <img src={facebook} alt="" className="h-7" />
                   </a>
                   <a
-                    href="/"
+                    href="https://www.instagram.com/squarefeet.xyz/"
+                    target="_blank"
                     className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
                   >
                     <img src={instagram} alt="" className="h-7" />
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/squarefeetxyz/"
                     className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
                   >
                     <img src={linkedIn} alt="" className="h-7" />
@@ -91,12 +97,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="#pricing"
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

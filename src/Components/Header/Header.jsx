@@ -53,14 +53,14 @@ z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-a
         </div>
 
         <div className="flex justify-center md:flex md:flex-row  sm:pt-[0.15rem]">
-          <a href="">
+          <a href="https://www.facebook.com/squarefeet.xyz" target="_blank">
             <img
               src={facebook}
               className="text-xl my-2 mx-1 md:mx-1 lg:mx-2"
               alt=""
             />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/squarefeet.xyz/" target="_blank">
             <img
               src={instagram}
               className="text-xl  my-2 mx-1 md:mx-1 lg:mx-2"
@@ -68,7 +68,7 @@ z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-a
             />
           </a>
 
-          <a href="">
+          <a href="https://www.linkedin.com/company/squarefeetxyz/" target="_blank">
             <img
               src={linkedIn}
               className="text-xl my-2 mx-1 md:mx-1 lg:mx-2"

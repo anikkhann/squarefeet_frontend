@@ -86,7 +86,10 @@ const Services = () => {
 
   return (
     //
-    <section className="bg-[#FDFAFA] max-w-5xl my-0 mx-auto float-none" id="#service">
+    <section
+      className="bg-[#FDFAFA] max-w-5xl my-0 mx-auto float-none"
+      id="#service"
+    >
       <div className="py-5 px-5 md:px-5">
         <div className="flex flex-row justify-items-center items-center justify-center ">
           <img src={quotation_one} alt="" />
@@ -131,7 +134,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/account-billing-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -157,7 +164,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/service-provider-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -183,7 +194,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/booking-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -208,7 +223,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/gatekeeper-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -234,7 +253,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/newsfeed-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -260,7 +283,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/contract-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -285,7 +312,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/neighbour-in-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -310,7 +341,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/police-verification-in-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>
@@ -334,7 +369,11 @@ const Services = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <div className="px-6 pt-4 pb-2 flex justify-center items-center">
-                  <a className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary">
+                  <a
+                    href="https://blog.squarefeet.xyz/notice-of-squarefeet/"
+                    target="_blank"
+                    className="inline-flex items-center py-2 px-3 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                  >
                     More
                   </a>
                 </div>

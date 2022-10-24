@@ -24,9 +24,15 @@ const Banner = () => {
               NewsFeed, Gatekeeper, Service Provider, Booking, Notice, Contract,
               and Police Verification are altogether present here.
             </p>
-            <button className="rounded-md text-white text-xs sm:text-sm md:text-base font-medium btn-sm btn-primary mt-4">
-              Learn More
-            </button>
+            <a
+              href="https://blog.squarefeet.xyz/what-is-squarefeet-of-bangladesh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="rounded-md text-white text-xs sm:text-sm md:text-base font-medium btn-sm btn-primary mt-4">
+                Learn More
+              </button>
+            </a>
           </div>
 
           <div className="relative md:w-[50%] sm:w-[50%] md:px-5 sm:px-5 px-5 my-5">
