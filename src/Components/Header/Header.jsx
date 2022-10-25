@@ -13,7 +13,7 @@ const Header = () => {
 z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-auto float-none"
     >
       <div className=" sm:flex sm:flex-row sm:justify-between flex-col w-full sm:px-5">
-        <div className="sm:flex sm:flex-row text-white ">
+        <div className="hidden sm:flex sm:flex-row text-white ">
           <div className="flex md:flex md:flex-row md:mx-1">
             <a href="">
               <img
@@ -56,14 +56,14 @@ z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-a
           <a href="https://www.facebook.com/squarefeet.xyz" target="_blank">
             <img
               src={facebook}
-              className="text-xl my-2 mx-1 md:mx-1 lg:mx-2"
+              className="text-xl my-2 mx-3 sm:mx-1 lg:mx-2"
               alt=""
             />
           </a>
           <a href="https://www.instagram.com/squarefeet.xyz/" target="_blank">
             <img
               src={instagram}
-              className="text-xl  my-2 mx-1 md:mx-1 lg:mx-2"
+              className="text-xl  my-2 mx-3 sm:mx-1 lg:mx-2"
               alt=""
             />
           </a>
@@ -71,7 +71,7 @@ z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-a
           <a href="https://www.linkedin.com/company/squarefeetxyz/" target="_blank">
             <img
               src={linkedIn}
-              className="text-xl my-2 mx-1 md:mx-1 lg:mx-2"
+              className="text-xl my-2 mx-3 sm:mx-1 lg:mx-2"
               alt=""
             />
           </a>

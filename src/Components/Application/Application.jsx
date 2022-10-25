@@ -1,17 +1,17 @@
 import React from "react";
 import application from "../../Assets/sf_logo/application.png";
-import a_store from "../../Assets/sf_logo/a_store.png";
-import g_play from "../../Assets/sf_logo/g_play.png";
+import app_st from "../../Assets/social_icon/app_st.png";
+import g_play from "../../Assets/social_icon/g_play.png";
 const Home = () => {
   return (
     <section className="max-w-5xl my-0 mx-auto float-none text-black bg-green-50">
       <div className="sm:flex sm:flex-row flex flex-col w-full py-8 sm:py-5 sm:px-5">
         <div className="md:w-[50%] sm:w-[50%] sm:px-5 px-5 my-5">
-          <div className="w-28 rounded-full border bg-[#2DB28A] bg-opacity-20 flex justify-center py-1 mb-2">
+          {/* <div className="w-28 rounded-full border bg-[#2DB28A] bg-opacity-20 flex justify-center py-1 mb-2">
             <a href="" className=" ">
               Application
             </a>
-          </div>
+          </div> */}
           {/* <button className="rounded-full opacity-20 text-black   bg-[#2DB28A]">Application</button> */}
           <h1 className="text-lg sm:text-xl md:text-3xl underline underline-offset-8">
             Get our Free Mobile App
@@ -23,38 +23,18 @@ const Home = () => {
             and, even communicate with the neighbours within seconds with many
             more services!
           </p>
-          <div className="flex justify-center my-5 ">
-            <a href="https://play.google.com/store/apps/details?id=xyz.squarefeet.user" target="_blank" className="flex items-center border w-auto rounded-lg px-4 py-2 mx-2 bg-black">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
-                className="w-7 md:w-8"
-              />
-              <div className="text-left ml-3">
-                <p className="text-xs text-white">Download on </p>
-                <p className="text-sm md:text-base text-white">
-                  {" "}
-                  Google Play Store{" "}
-                </p>
-              </div>
+          <div className="flex  my-5 ">
+            <a
+              href="https://play.google.com/store/apps/details?id=xyz.squarefeet.user"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="w-32 h-12" src={g_play} alt="" />
             </a>
-            <a href="#" className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2 bg-black">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
-                className="w-7 md:w-8 "
-              />
-              <div className="text-left ml-3">
-                <p className="text-xs text-white">Download on </p>
-                <p className="text-sm md:text-base text-white"> Apple Store </p>
-              </div>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img className="w-32 h-12 mx-2" src={app_st} alt="" />
             </a>
           </div>
-          {/* <div className="flex flex-row mt-4">
-          <img  src="https://cdn-icons-png.flaticon.com/512/888/888841.png" className="rounded-md w-8 h-8"/>
-           
-          <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" className="mx-8 rounded-md w-8 h-8"/>
-         
-      
-          </div> */}
         </div>
 
         <div className="relative md:w-[50%] sm:w-[50%] md:px-5 sm:px-5 px-5 my-5">

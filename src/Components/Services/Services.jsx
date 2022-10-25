@@ -105,7 +105,7 @@ const Services = () => {
           showDots={true}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          autoPlay={false}
+          autoPlay={true}
           arrows={true}
           autoPlaySpeed={3000}
           keyBoardControl={true}

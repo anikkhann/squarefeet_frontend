@@ -138,7 +138,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
-                    +880 1999999999
+                    +8801940301000
                   </a>
                 </li>
                 <li className="flex items-center md:justify-start mb-4">

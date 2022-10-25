@@ -185,12 +185,14 @@ const Navbar = () => {
           Log in
         </button> */}
 
-        <button
+       <a href="https://home.squarefeet.xyz/en/login" target="_blank" rel="noopener noreferrer">
+       <button
           type="submit"
           className="rounded-md my-3 mx-2 md:mx-2 lg:mx-2 btn-sm bg-secondary"
         >
-          Register
+          Register / Log in
         </button>
+       </a>
       </div>
     </section>
   );

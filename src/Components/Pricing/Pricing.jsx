@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import quotation_one from "../../Assets/sf_logo/quotation_one.png";
 import quotation_two from "../../Assets/sf_logo/quotation_two.png";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [openTab, setOpenTab] = useState(1);
   return (
     //
     <section className="bg-[#FDFAFA] max-w-5xl my-0 mx-auto float-none" id="#pricing">
-      <div className="py-5 px-5 md:px-5">
+    <Link to={"/price"} >
+    <div className="pt-5 pb-20 px-5 md:px-5 md:pb-20">
         <div className="flex flex-row justify-items-center items-center justify-center py-3 ">
           <img src={quotation_one} alt="" />
           <h1 className="text-secondary underline underline-offset-8 md:text-4xl px-3 text-2xl font-semibold">
@@ -23,7 +25,7 @@ const Pricing = () => {
         </p>
 
         {/*pricing tabs start */}
-        <div className="flex flex-wrap">
+        {/* <div className="flex flex-wrap">
           <div className="w-full">
             <div className="flex justify-items-start">
               <ul className="flex list-none pt-3 flex-row  z-20" role="tablist">
@@ -45,7 +47,7 @@ const Pricing = () => {
                   </a>
                 </li>
                 <p className="divide-y-2"></p>
-                {/* <li className="mr-2 sm:mr-4 md:mr-4 last:mr-0  text-center">
+                <li className="mr-2 sm:mr-4 md:mr-4 last:mr-0  text-center">
                   <a
                     className={`text-base sm:text-lg sm:py-4 md:text-base md:py-4 lg:text-lg font-bold px-2 py-3 lg:py-5 block leading-normal " +
                           ${
@@ -61,19 +63,19 @@ const Pricing = () => {
                   >
                     Offer for You
                   </a>
-                </li> */}
+                </li>
               </ul>
             </div>
 
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6">
               <div className="sm:px-4 flex-auto">
                 <div className="tab-content tab-space">
-                  {/* tab 1 */}
+                
                   <div
                     className={` ${openTab === 1 ? "block" : "hidden"}`}
                     id="link1"
                   >
-                    {/*Free and primium cards (1-3) */}
+                  
                     <div className="md:px-5 lg:px-5 md:py-3 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 ">
                       <div className="block p-6 w-full bg-primary rounded-sm border border-primary shadow-md hover:bg-primary md:h-[19rem]">
                         <div>
@@ -83,7 +85,7 @@ const Pricing = () => {
                         </div>
                         <div className="border-b border-deep-purple-accent-200  mt-3"></div>
 
-                        {/* list for free of cost */}
+                       
                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 my-4">
                           <div className="table m-0 ml-auto mr-auto">
                             <p className="font-medium tracking-wide text-white sm:text-base text-lg underline underline-offset-2">
@@ -153,10 +155,10 @@ const Pricing = () => {
                             </ul>
                           </div>
                         </div>
-                        {/* free of cost end */}
+                     
                       </div>
 
-                      {/* 2nd card */}
+                    
                       <div className="block p-6 w-full bg-primary rounded-sm border border-primary shadow-md hover:bg-primary md:h-[25rem]">
                         <div>
                           <h2 className="text-white text-center text-lg font-semibold">
@@ -165,7 +167,7 @@ const Pricing = () => {
                         </div>
                         <div className="border-b border-deep-purple-accent-200  mt-3"></div>
 
-                        {/* list for free of cost */}
+                   
                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 my-4">
                           <div className="table m-0 ml-auto mr-auto">
                             <p className="font-medium tracking-wide text-white sm:text-base text-lg underline underline-offset-2">
@@ -259,10 +261,10 @@ const Pricing = () => {
                             </ul>
                           </div>
                         </div>
-                        {/* free of cost end */}
+                    
                       </div>
 
-                      {/* 3rd card */}
+                  
                       <div className="block p-6 w-full bg-primary rounded-sm border border-primary shadow-md hover:bg-primary md:h-[29rem]">
                         <div>
                           <h2 className="text-white text-center text-lg font-semibold">
@@ -271,7 +273,7 @@ const Pricing = () => {
                         </div>
                         <div className="border-b border-deep-purple-accent-200 mt-3"></div>
 
-                        {/* list for free of cost */}
+                    
                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 my-4">
                           <div className="table m-0 ml-auto mr-auto">
                             <p className="font-medium tracking-wide text-white sm:text-base text-lg underline underline-offset-2">
@@ -377,9 +379,9 @@ const Pricing = () => {
                             </ul>
                           </div>
                         </div>
-                        {/* free of cost end */}
+                      
                       </div>
-                      {/* end*/}
+                   
                     </div>
 
                     <p className="text-center py-10">
@@ -390,8 +392,8 @@ const Pricing = () => {
                       </span>
                     </p>
                   </div>
-                  {/* tab2 */}
-                  {/* <div
+               
+                  <div
                     className={` ${openTab === 2 ? "block" : "hidden"}`}
                     id="link2"
                   >
@@ -445,14 +447,15 @@ const Pricing = () => {
                         500 BDT
                       </span>
                     </p>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* end */}
+        </div> */}
+     
       </div>
+    </Link>
     </section>
   );
 };
