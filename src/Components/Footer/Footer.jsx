@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import facebook from "../../Assets/social_icon/facebook.png";
 import instagram from "../../Assets/social_icon/instagram.png";
 import linkedIn from "../../Assets/social_icon/linkedIn.png";
@@ -98,19 +98,19 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#pricing"
+                    to={"/price"}
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to={"/terms"}
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
                     Terms and Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

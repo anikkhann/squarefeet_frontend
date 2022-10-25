@@ -1,14 +1,21 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './Components/Pages/Home';
-
+import TermsConditions from './Components/TermsConditions/TermsConditions';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import PricingDetails from './Components/PricingDetails/PricingDetails';
+import ContactUs from './Components/ContactUs/ContactUs';
 function App() {
   return (
-    <div >
+    <ScrollToTop >
      <Routes>
         <Route path="/" element={<Home />} exact/>
+        <Route path="/terms" element={<TermsConditions />} exact/>
+        <Route path="/price" element={<PricingDetails />} exact/>
+        <Route path="/contact" element={<ContactUs />} exact/>
+
       </Routes>
-    </div>
+    </ScrollToTop>
   );
 }
 

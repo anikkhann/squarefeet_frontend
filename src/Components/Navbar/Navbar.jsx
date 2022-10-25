@@ -1,7 +1,6 @@
 import React from "react";
 import sf_logo from "../../Assets/sf_logo/sf_logo.png";
-import * as Scroll from 'react-scroll';
-import { Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     //
@@ -30,11 +29,11 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary bg-opacity-80 rounded-box w-52"
           >
             <li>
-              <Link to="#home" smooth={true} offset={50} duration={1000} className="justify-between"> Home </Link>
+              <Link to={"/"} className="justify-between"> Home </Link>
             </li>
 
             <li tabindex="0">
-              <Link to="#service" smooth={true} offset={50} duration={1000} className="justify-between">
+              <Link  className="justify-between">
                 Services
                 {/* <svg
                   class="fill-current hover:transform hover:rotate-180"
@@ -59,7 +58,7 @@ const Navbar = () => {
               </ul> */}
             </li>
             <li tabindex="1">
-              <Link to="#blog" smooth={true} offset={50} duration={1000} className="justify-between">
+              <Link  className="justify-between">
                 Blog
                 {/* <svg
                   class="fill-current hover:transform hover:rotate-180"
@@ -85,33 +84,33 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="#pricing" smooth={true} offset={50} duration={1000} className="justify-between"> Pricing </Link>
+              <Link to={"/price"} className="justify-between"> Pricing </Link>
             </li>
 
             <li>
-              <Link to="#event" smooth={true} offset={50} duration={1000} className="justify-between"> News and Events </Link>
+              <Link className="justify-between"> News and Events </Link>
             </li>
 
             <li>
-              <Link to="#footer" smooth={true} offset={50} duration={1000} className="justify-between"> Contact Us </Link>
+              <Link to={"/contact"}  className="justify-between"> Contact Us </Link>
             </li>
            
           </ul>
         </div>
 
-        <a href="" className="sm:flex sm:items-center hidden">
+        <Link to={"/"} href="" className="sm:flex sm:items-center hidden">
           <img src={sf_logo} className="ml-3 h-6 sm:h-6" />
-        </a>
+        </Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 font-normal">
           <li>
-            <Link to="#home" smooth={true} offset={50} duration={1000} className="justify-between text-sm  text-black"> Home </Link>
+            <Link to={"/"} className="justify-between text-sm  text-black"> Home </Link>
           </li>
 
           <li tabindex="0">
-            <Link to="#service" smooth={true} offset={50} duration={1000} className="text-sm  text-black">
+            <Link  className="text-sm  text-black">
               Services
               {/* <svg
                 class="fill-current hover:transform hover:rotate-180"
@@ -136,7 +135,7 @@ const Navbar = () => {
             </ul> */}
           </li>
           <li tabindex="1">
-            <Link to="#blog" smooth={true} offset={50} duration={1000} className="text-sm  text-black">
+            <Link  className="text-sm  text-black">
               Blog
               {/* <svg
                 class="fill-current  hover:transform hover:rotate-180"
@@ -162,29 +161,29 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="#pricing" smooth={true} offset={50} duration={1000} className="justify-between text-sm text-black"> Pricing </Link>
+            <Link to={"/price"} className="justify-between text-sm text-black"> Pricing </Link>
           </li>
 
           <li>
-            <Link to="#event" smooth={true} offset={50} duration={1000} className="justify-between text-sm  text-black">
+            <Link  className="justify-between text-sm  text-black">
               {" "}
               News and Events{" "}
             </Link>
           </li>
 
           <li>
-            <Link to="#footer" smooth={true} offset={50} duration={1000} className="justify-between text-sm  text-black"> Contact Us </Link>
+            <Link to={"/contact"} className="justify-between text-sm  text-black"> Contact Us </Link>
           </li>
         </ul>
       </div>
 
       <div className="navbar-end sm:w-[50%] w-[150%]">
-        <button
+        {/* <button
           type="submit"
           className="rounded-md my-3 mx-2 md:mx-2 lg:mx-2 btn-sm bg-primary"
         >
           Log in
-        </button>
+        </button> */}
 
         <button
           type="submit"

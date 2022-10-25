@@ -45,7 +45,7 @@ const Pricing = () => {
                   </a>
                 </li>
                 <p className="divide-y-2"></p>
-                <li className="mr-2 sm:mr-4 md:mr-4 last:mr-0  text-center">
+                {/* <li className="mr-2 sm:mr-4 md:mr-4 last:mr-0  text-center">
                   <a
                     className={`text-base sm:text-lg sm:py-4 md:text-base md:py-4 lg:text-lg font-bold px-2 py-3 lg:py-5 block leading-normal " +
                           ${
@@ -61,7 +61,7 @@ const Pricing = () => {
                   >
                     Offer for You
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -391,13 +391,13 @@ const Pricing = () => {
                     </p>
                   </div>
                   {/* tab2 */}
-                  <div
+                  {/* <div
                     className={` ${openTab === 2 ? "block" : "hidden"}`}
                     id="link2"
                   >
-                    {/* Offer for you */}
+                   
                     <div className="md:px-5 lg:px-5 md:py-3 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
-                      {/* 1st card */}
+                    
                       <div className="block p-6 w-full bg-secondary rounded-sm border border-secondary shadow-md hover:bg-secondary">
                         <div>
                           <h2 className="text-white text-center text-lg font-semibold">
@@ -418,7 +418,7 @@ const Pricing = () => {
                         </div>
                       </div>
 
-                      {/* 2nd card */}
+                  
                       <div className="block p-6 w-full bg-secondary rounded-sm border border-secondary shadow-md hover:bg-secondary md:h-[11rem]">
                         <div>
                           <h2 className="text-white text-center text-lg font-semibold">
@@ -435,7 +435,7 @@ const Pricing = () => {
                           </p>
                         </div>
                       </div>
-                      {/* end*/}
+                   
                     </div>
 
                     <p className="text-center py-10">
@@ -445,7 +445,7 @@ const Pricing = () => {
                         500 BDT
                       </span>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
