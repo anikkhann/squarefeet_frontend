@@ -14,7 +14,7 @@ const Blogs = () => {
           <h1 className="text-secondary underline underline-offset-8 md:text-2xl px-3 text-xl font-semibold">
             Our Blogs
           </h1>
-          <a className="text-base text-primary font-medium cursor-pointer">
+          <a href="https://blog.squarefeet.xyz/" target="_blank" className="text-base text-primary font-medium cursor-pointer">
             See More
           </a>
         </div>
@@ -39,7 +39,7 @@ const Blogs = () => {
             </h2>
 
             <div className="flex flex-row justify-between mt-4">
-              <p className=" text-white text-sm">20 october 2022</p>
+              <p className=" text-white text-sm">Jan 12, 2022</p>
               <a
                 href="https://blog.squarefeet.xyz/how-to-login-in-squarefeet-community/"
                 target="_blank"
@@ -71,7 +71,7 @@ const Blogs = () => {
             </h2>
 
             <div className="flex flex-row justify-between mt-4">
-              <p className=" text-white text-sm">20 october 2022</p>
+              <p className=" text-white text-sm">Feb 16, 2022</p>
               <a
                 href="https://blog.squarefeet.xyz/how-to-generate-invoice-using-squarefeet-platform/"
                 target="_blank"
@@ -103,7 +103,7 @@ const Blogs = () => {
             </h2>
 
             <div className="flex flex-row justify-between mt-4">
-              <p className=" text-white text-sm">20 october 2022</p>
+              <p className=" text-white text-sm">Jan 6, 2022</p>
               <a
                 href="https://blog.squarefeet.xyz/complete-my-profile-in-squarefeet-self/"
                 target="_blank"

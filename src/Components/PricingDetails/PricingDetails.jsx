@@ -10,8 +10,8 @@ import quotation_two from "../../Assets/sf_logo/quotation_two.png";
 import general from "../../Assets/pricing_details/general.png";
 import standard from "../../Assets/pricing_details/standard.png";
 import exclusive from "../../Assets/pricing_details/exclusive.png";
-import phone from "../../Assets/social_icon/phone.png";
-import mail from "../../Assets/social_icon/mail.png";
+import mail_add from "../../Assets/social_icon/mail_add.png";
+import ph from "../../Assets/social_icon/ph.png";
 const PricingDetails = () => {
   return (
     //
@@ -328,19 +328,40 @@ const PricingDetails = () => {
 
           {/* phone & mail button */}
           <div className="grid place-content-center place-items-center justify-center items-center py-5">
-          <p className="text-center text-[#333333] font-semibold text-sm sm:text-base">
-          To know about our pricing please contact us - 
-              </p>
-              <div className="flex flex-col space-y-5 sm:flex-row sm:justify-around sm:space-x-10 mt-5">
-              <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
+            <p className="text-center text-[#333333] font-semibold text-sm sm:text-base">
+              To know about our pricing please contact us -
+            </p>
+            <div className="flex flex-col  sm:flex-row sm:justify-around sm:space-x-10 sm:my-6 ">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5"
+              >
+                <img className="w-30 h-20 sm:w-30 sm:h-20" src={ph} alt="" />
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5"
+              >
+                <img
+                  className="w-30 h-20 sm:w-30 sm:h-20"
+                  src={mail_add}
+                  alt=""
+                />
+              </a>
+              {/* <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
                 <img className="h-4" src={phone} alt="" />
                 <p>+8801940301000</p>
               </button>
-              <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
-              <img className="h-3" src={mail} alt="" />
-                <p>info@staging.squarefeet.xyz</p>
-              </button>
-              </div>
+            
+                <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
+                <img className="h-4" src={mail} alt="" />
+                <p className="">info@staging.squarefeet.xyz</p>
+              </button> */}
+            </div>
           </div>
         </div>
       </section>

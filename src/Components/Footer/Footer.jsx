@@ -66,6 +66,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/company/squarefeetxyz/"
+                    target="_blank"
                     className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
                   >
                     <img src={linkedIn} alt="" className="h-7" />
@@ -90,7 +91,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://blog.squarefeet.xyz/"
+                    target="_blank"
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
                     Blog
@@ -131,7 +133,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="flex items-center md:justify-start mb-4">
-                  <img src={mail} className="w-4 mr-4" alt="" />
+                  <img src={phone} className="w-4 mr-4" alt="" />
                   <a
                     href="/"
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
@@ -140,7 +142,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="flex items-center md:justify-start mb-4">
-                  <img src={phone} className="w-4 mr-4" alt="" />
+                  <img src={mail} className="w-4 mr-4" alt="" />
                   <a
                     href="/"
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"

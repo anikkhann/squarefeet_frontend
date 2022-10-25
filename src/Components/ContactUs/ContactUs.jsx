@@ -49,7 +49,7 @@ const ContactUs = () => {
                       </a>
                     </li>
                     <li className="flex items-center md:justify-start mb-4">
-                      <img src={mail} className="w-4 mr-4" alt="" />
+                      <img src={phone} className="w-4 mr-4" alt="" />
                       <a
                         href="/"
                         className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
@@ -58,7 +58,7 @@ const ContactUs = () => {
                       </a>
                     </li>
                     <li className="flex items-center md:justify-start mb-4">
-                      <img src={phone} className="w-4 mr-4" alt="" />
+                      <img src={mail} className="w-4 mr-4" alt="" />
                       <a
                         href="/"
                         className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"

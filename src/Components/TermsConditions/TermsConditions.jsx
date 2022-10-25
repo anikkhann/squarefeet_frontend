@@ -7,6 +7,7 @@ import Navbar from "../Navbar/Navbar";
 import bg from "../../Assets/sf_logo/bg.png";
 import quotation_one from "../../Assets/sf_logo/quotation_one.png";
 import quotation_two from "../../Assets/sf_logo/quotation_two.png";
+import { Link } from "react-router-dom";
 const TermsConditions = () => {
   const [openTerms, setOpenTerms] = useState(1);
   return (
@@ -279,9 +280,12 @@ const TermsConditions = () => {
                                   If you have any further questions or requests
                                   regarding this terms and conditions, or your
                                   personal Information, feel free to{" "}
-                                  <a className="text-[#326EBD] font-semibold">
+                                  <Link
+                                    to={"/contact"}
+                                    className="text-[#326EBD] font-semibold"
+                                  >
                                     contact us
-                                  </a>
+                                  </Link>
                                   .
                                 </div>
                               </a>
@@ -303,11 +307,10 @@ const TermsConditions = () => {
                                     className="w-1 h-1 pb-1"
                                   />{" "}
                                   <span className="ml-2">
-                                  For any technical disruption, kindly contact
-                                  on SquareFeet hotline number 01940-301000, or
-                                  email us - at info@squarefeet.xyz
+                                    For any technical disruption, kindly contact
+                                    on SquareFeet hotline number 01940-301000,
+                                    or email us - at info@squarefeet.xyz
                                   </span>
-                                 
                                 </div>
                               </a>
                             </li>
@@ -319,88 +322,10 @@ const TermsConditions = () => {
                                     className="w-1 h-1 pb-1"
                                   />{" "}
                                   <span className="ml-2">
-                                  For any user experience malfunction, you have
-                                  to inform SquareFeet immediately. Otherwise,
-                                  no benefit is promised later.
+                                    For any user experience malfunction, you
+                                    have to inform SquareFeet immediately.
+                                    Otherwise, no benefit is promised later.
                                   </span>
-                                 
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
-                                <div className="">
-                                  <FontAwesomeIcon
-                                    icon={faCircle}
-                                    className="w-1 h-1 pb-1"
-                                  />{" "}
-                                 <span className="ml-2">
-                                 SquareFeet is only the booking facilitator on
-                                  behalf of the original institutions.
-                                 </span>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
-                                <div className="">
-                                  <FontAwesomeIcon
-                                    icon={faCircle}
-                                    className="w-1 h-1 pb-1"
-                                  />{" "}
-                                 <span className="ml-2">
-                                 To cancel your fully paid booked item, you
-                                  have to contact the institution personally.
-                                  The institutions should leave their hotline
-                                  number, and/ or email address in the
-                                  description/ features part.
-                                 </span>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
-                                <div className="">
-                                  <FontAwesomeIcon
-                                    icon={faCircle}
-                                    className="w-1 h-1 pb-1"
-                                  />{" "}
-                                 <span className="ml-2">
-                                 Canceling a booking is fully dependent on the
-                                  institution. SquareFeet has nothing to do with
-                                  it.
-                                 </span>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
-                                <div className="">
-                                  <FontAwesomeIcon
-                                    icon={faCircle}
-                                    className="w-1 h-1 pb-1"
-                                  />{" "}
-                                 <span className="ml-2">
-                                 After canceling the booking, the amount, or no
-                                  amount to be returned depends on the
-                                  particular institution, SquareFeet has no
-                                  relation with it
-                                 </span>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
-                                <div className="">
-                                  <FontAwesomeIcon
-                                    icon={faCircle}
-                                    className="w-1 h-1 pb-1"
-                                  />{" "}
-                                <span className="ml-2">
-                                If any institution is not available with their
-                                  given phone number, SquareFeet can not be held
-                                  responsible.
-                                </span>
                                 </div>
                               </a>
                             </li>
@@ -412,10 +337,87 @@ const TermsConditions = () => {
                                     className="w-1 h-1 pb-1"
                                   />{" "}
                                   <span className="ml-2">
-                                  If any institution is found to be fraud or
-                                  cheating or does not provide the promised
-                                  service, SquareFeet can not be held
-                                  responsible.
+                                    SquareFeet is only the booking facilitator
+                                    on behalf of the original institutions.
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
+                                <div className="">
+                                  <FontAwesomeIcon
+                                    icon={faCircle}
+                                    className="w-1 h-1 pb-1"
+                                  />{" "}
+                                  <span className="ml-2">
+                                    To cancel your fully paid booked item, you
+                                    have to contact the institution personally.
+                                    The institutions should leave their hotline
+                                    number, and/ or email address in the
+                                    description/ features part.
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
+                                <div className="">
+                                  <FontAwesomeIcon
+                                    icon={faCircle}
+                                    className="w-1 h-1 pb-1"
+                                  />{" "}
+                                  <span className="ml-2">
+                                    Canceling a booking is fully dependent on
+                                    the institution. SquareFeet has nothing to
+                                    do with it.
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
+                                <div className="">
+                                  <FontAwesomeIcon
+                                    icon={faCircle}
+                                    className="w-1 h-1 pb-1"
+                                  />{" "}
+                                  <span className="ml-2">
+                                    After canceling the booking, the amount, or
+                                    no amount to be returned depends on the
+                                    particular institution, SquareFeet has no
+                                    relation with it
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
+                                <div className="">
+                                  <FontAwesomeIcon
+                                    icon={faCircle}
+                                    className="w-1 h-1 pb-1"
+                                  />{" "}
+                                  <span className="ml-2">
+                                    If any institution is not available with
+                                    their given phone number, SquareFeet can not
+                                    be held responsible.
+                                  </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a className="text-xs py-2 sm:text-base  text-[#455A64] flex md:flex-row flex-col gap-4">
+                                <div className="">
+                                  <FontAwesomeIcon
+                                    icon={faCircle}
+                                    className="w-1 h-1 pb-1"
+                                  />{" "}
+                                  <span className="ml-2">
+                                    If any institution is found to be fraud or
+                                    cheating or does not provide the promised
+                                    service, SquareFeet can not be held
+                                    responsible.
                                   </span>
                                 </div>
                               </a>
@@ -515,8 +517,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">Google Play Services</span>
-                                  
+                                  <span className="ml-2">
+                                    Google Play Services
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -527,8 +530,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">Google Analytics for Firebase</span>
-                                  
+                                  <span className="ml-2">
+                                    Google Analytics for Firebase
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -539,8 +543,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">iOS Apps Privacy Policy</span>
-                                  
+                                  <span className="ml-2">
+                                    iOS Apps Privacy Policy
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -600,8 +605,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">To facilitate our Service.</span>
-                                  
+                                  <span className="ml-2">
+                                    To facilitate our Service.
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -612,8 +618,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">To provide the Service on our behalf.</span>
-                                  
+                                  <span className="ml-2">
+                                    To provide the Service on our behalf.
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -624,8 +631,9 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                  <span className="ml-2">To perform Service-related services, or</span>
-                                  
+                                  <span className="ml-2">
+                                    To perform Service-related services, or
+                                  </span>
                                 </div>
                               </a>
                             </li>
@@ -637,8 +645,11 @@ const TermsConditions = () => {
                                     icon={faCircle}
                                     className="w-1 h-1 pb-1"
                                   />{" "}
-                                 <span className="ml-2"> To assist us in analyzing how our Service is
-                                  used.</span>
+                                  <span className="ml-2">
+                                    {" "}
+                                    To assist us in analyzing how our Service is
+                                    used.
+                                  </span>
                                 </div>
                               </a>
                             </li>

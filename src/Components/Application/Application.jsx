@@ -24,7 +24,7 @@ const Home = () => {
             more services!
           </p>
           <div className="flex justify-center my-5 ">
-            <div className="flex items-center border w-auto rounded-lg px-4 py-2 mx-2 bg-black">
+            <a href="https://play.google.com/store/apps/details?id=xyz.squarefeet.user" target="_blank" className="flex items-center border w-auto rounded-lg px-4 py-2 mx-2 bg-black">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
                 className="w-7 md:w-8"
@@ -36,8 +36,8 @@ const Home = () => {
                   Google Play Store{" "}
                 </p>
               </div>
-            </div>
-            <div className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2 bg-black">
+            </a>
+            <a href="#" className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2 bg-black">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
                 className="w-7 md:w-8 "
@@ -46,7 +46,7 @@ const Home = () => {
                 <p className="text-xs text-white">Download on </p>
                 <p className="text-sm md:text-base text-white"> Apple Store </p>
               </div>
-            </div>
+            </a>
           </div>
           {/* <div className="flex flex-row mt-4">
           <img  src="https://cdn-icons-png.flaticon.com/512/888/888841.png" className="rounded-md w-8 h-8"/>
