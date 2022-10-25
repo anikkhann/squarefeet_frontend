@@ -108,7 +108,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"/terms"}
+                    to={"/privacy-policy"}
                     className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                   >
                     Terms and Conditions
