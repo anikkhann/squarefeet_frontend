@@ -12,7 +12,9 @@ import standard from "../../Assets/pricing_details/standard.png";
 import exclusive from "../../Assets/pricing_details/exclusive.png";
 import mail_add from "../../Assets/social_icon/mail_add.png";
 import ph from "../../Assets/social_icon/ph.png";
+import MailTo from "../MailTo/MailTo";
 const PricingDetails = () => {
+  const{mailTo, setMailTo} = useState ("nfo@squarefeet.xyz")
   return (
     //
     <section className="overflow-hidden max-w-5xl my-0 mx-auto float-none">
@@ -332,35 +334,28 @@ const PricingDetails = () => {
               To know about our pricing please contact us -
             </p>
             <div className="flex flex-col  sm:flex-row sm:justify-around sm:space-x-10 sm:my-6 ">
-              <a
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5"
-              >
-                <img className="w-30 h-20 sm:w-30 sm:h-20" src={ph} alt="" />
+              <a href="phn:01940301000" className="mt-5 ">
+                <img
+                  className="w-30 h-20 sm:w-30 sm:h-20 cursor-pointer"
+                  src={ph}
+                  alt=""
+                />
               </a>
-              <a
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5"
+
+
+              <a  className="mt-5 "
+                
               >
                 <img
-                  className="w-30 h-20 sm:w-30 sm:h-20"
+                onClick={(e) => {
+                  window.location.href = mailTo;
+                  e.preventDefault();
+              }}
+                  className="w-30 h-20 sm:w-30 sm:h-20 cursor-pointer"
                   src={mail_add}
                   alt=""
                 />
               </a>
-              {/* <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
-                <img className="h-4" src={phone} alt="" />
-                <p>+8801940301000</p>
-              </button>
-            
-                <button className="rounded-lg px-1 py-1 btn-primary text-sm text-white grid grid-cols-1 place-items-center justify-center">
-                <img className="h-4" src={mail} alt="" />
-                <p className="">info@staging.squarefeet.xyz</p>
-              </button> */}
             </div>
           </div>
         </div>

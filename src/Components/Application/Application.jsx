@@ -23,16 +23,16 @@ const Home = () => {
             and, even communicate with the neighbours within seconds with many
             more services!
           </p>
-          <div className="flex  my-5 ">
+          <div className="flex flex-col sm:flex-row  my-5 ">
             <a
               href="https://play.google.com/store/apps/details?id=xyz.squarefeet.user"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="w-32 h-12" src={g_play} alt="" />
+              <img className="w-24 h-12" src={g_play} alt="" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img className="w-32 h-12 mx-2" src={app_st} alt="" />
+              <img className="w-24 h-12 mx-2" src={app_st} alt="" />
             </a>
           </div>
         </div>

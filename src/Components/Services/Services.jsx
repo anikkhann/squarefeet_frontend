@@ -20,6 +20,9 @@ import s_seven from "../../Assets/services/s_seven.png";
 import neighbour from "../../Assets/services/neighbour.png";
 import s_eight from "../../Assets/services/s_eight.png";
 import s_nine from "../../Assets/services/s_nine.png";
+import contract from "../../Assets/services/contract.png";
+import police_v from "../../Assets/services/police_v.png";
+import notice from "../../Assets/services/notice.png";
 const Services = () => {
   // services slider values
   const responsive = {
@@ -275,7 +278,7 @@ const Services = () => {
                 <img className="w-12 h-12 mx-2 my-2" src={s_six} />
               </div>
               <div className="px-6 py-5">
-                <img src={service} alt="" />
+                <img src={contract} alt="" />
                 <div className="font-bold text-lg mb-2 mt-2 text-black">
                   Contract
                 </div>
@@ -334,7 +337,7 @@ const Services = () => {
                 <img className="w-12 h-12 mx-2 my-2" src={s_eight} />
               </div>
               <div className="px-6 py-5">
-                <img className="w-[69px] h-[60px]" src={accounting} alt="" />
+                <img className="w-[69px] h-[60px]" src={police_v} alt="" />
                 <div className="font-bold text-lg mb-2 mt-2 text-black">
                   Police Verification
                 </div>
@@ -362,7 +365,7 @@ const Services = () => {
                 <img className="w-12 h-12 mx-2 my-2" src={s_nine} />
               </div>
               <div className="px-6 py-5">
-                <img src={service} alt="" />
+                <img src={notice} alt="" />
                 <div className="font-bold text-lg mb-2 mt-2 text-black">
                   Notice
                 </div>

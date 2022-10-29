@@ -35,7 +35,7 @@ z-20 py-2 lg:py-2 bg-gradient-to-r from-primary to-secondary max-w-5xl my-0 mx-a
               />
             </a>
             <p className="my-3 px-2 text-sm md:text-xs sm:text-[9px]">
-            info@staging.squarefeet.xyz
+            info@squarefeet.xyz
             </p>
           </div>
           <div className="flex md:flex md:flex-row md:mx-1">

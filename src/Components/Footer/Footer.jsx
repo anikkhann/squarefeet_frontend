@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useForm}  from 'react-hook-form';
+import axios from "axios";
 import facebook from "../../Assets/social_icon/facebook.png";
 import instagram from "../../Assets/social_icon/instagram.png";
 import linkedIn from "../../Assets/social_icon/linkedIn.png";
@@ -7,6 +9,35 @@ import location from "../../Assets/social_icon/location.png";
 import phone from "../../Assets/social_icon/phone.png";
 import mail from "../../Assets/social_icon/mail.png";
 const Footer = () => {
+  const { register, formState: { errors}, handleSubmit } = useForm();
+  
+  const onSubmit = async (data) => 
+  {
+  
+
+    const queryData = {...data};
+
+    try {
+     await axios.post(`${process.env.REACT_APP_UNPLASH_BASEURL}/users`, queryData)
+     
+    } catch (error) {
+      console.log(error);
+      queryData = ""; 
+    }
+    
+    // fetch(`${process.env.REACT_APP_UNPLASH_BASEURL}/users`,{
+    //     method: 'POST',
+    //     headers: {'Content-Type': 'application/json'},
+    //     body: JSON.stringify(queryData)
+    //   })
+    //   .then(res=>res.json())
+    //   .then(data=>{
+      
+        
+    //     console.log(data);
+    //   })
+    
+  }
   return (
     //
 
@@ -159,7 +190,7 @@ const Footer = () => {
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <form action="#" className="space-y-4">
+                  <form action="#" className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                     <div>
                       <label
                         for="name"
@@ -169,11 +200,15 @@ const Footer = () => {
                       </label>
                       <input
                         type="text"
-                        id="name"
+                      
+                        name="name"
+                  {...register("fullName", { required: true })}
+                   aria-invalid={errors.fullName ? "true" : "false"} 
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                         placeholder="Full Name"
-                        required
+                        
                       />
+                       {errors.fullName?.type === 'required' && <p role="alert" className="text-red-800 font-semibold">* Full name is required</p>}
                     </div>
 
                     <div>
@@ -185,11 +220,14 @@ const Footer = () => {
                       </label>
                       <input
                         type="number"
-                        id="number"
+                        name="number"
+                        {...register("number", { required: true })}
+                        aria-invalid={errors.fullName ? "true" : "false"} 
                         className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                         placeholder="Phone Number"
-                        required
+                        
                       />
+                       {errors.number?.type === 'required' && <p role="alert" className="text-red-800 font-semibold">* Number is required</p>}
                     </div>
 
                     <div>
@@ -201,11 +239,14 @@ const Footer = () => {
                       </label>
                       <input
                         type="email"
-                        id="email"
+                        name="email"
+                        {...register("email", { required: true })}
+                   aria-invalid={errors.fullName ? "true" : "false"} 
                         className="shadow-base bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                         placeholder="xyz@gmail.com"
-                        required
+                        
                       />
+                          {errors.email?.type === 'required' && <p role="alert" className="text-red-800 font-semibold">* Email name is required</p>}
                     </div>
 
                     <button

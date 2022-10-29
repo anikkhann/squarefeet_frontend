@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
@@ -9,27 +11,47 @@ import location from "../../Assets/social_icon/location.png";
 import phone from "../../Assets/social_icon/phone.png";
 import mail from "../../Assets/social_icon/mail.png";
 const ContactUs = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = async (data) => {
+    const queryData = { ...data };
+
+    try {
+      await axios.post(
+        `${process.env.REACT_APP_UNPLASH_BASEURL}/users`,
+        queryData
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     //
     <section className="overflow-hidden max-w-5xl my-0 mx-auto float-none">
       <Header></Header>
       <Navbar></Navbar>
-      <div className="relative md:relative bg-[#FDFAFA]">
-        <img className="w-full h-64 sm:h-72 md:h-[350px]" src={bg} alt="" />
-        <div className="absolute inset-0 ">
-          <div className="flex flex-row justify-items-center items-center justify-center ">
-            <img src={quotation_one} alt="" />
-            <h1 className="text-secondary underline underline-offset-4 md:text-4xl px-3 my-7 sm:my-7 md:my-11 text-xl sm:text-3xl  font-semibold">
-              Contact Us
-            </h1>
-            <img src={quotation_two} alt="" />
+      <div className=" bg-[#FDFAFA]">
+        <div className="relative md:relative inset-y-5 z-10">
+          <img className="w-full h-64 sm:h-72 md:h-[350px]" src={bg} alt="" />
+          <div className="absolute inset-0 ">
+            <div className="flex flex-row justify-items-center items-center justify-center ">
+              <img src={quotation_one} alt="" />
+              <h1 className="text-secondary underline underline-offset-4 md:text-4xl px-3 my-7 sm:my-7 md:my-11 text-xl sm:text-3xl  font-semibold">
+                Contact Us
+              </h1>
+              <img src={quotation_two} alt="" />
+            </div>
+            <p className="text-center">
+              To register as community admin, or as a partner, please contact
+              us.
+            </p>
           </div>
-          <p className="text-center">
-            To register as community admin, or as a partner, please contact us.
-          </p>
         </div>
         {/* Get In touch */}
-        <section className="-mt-36 sm:-mt-44 md:-mt-52 w-full flex justify-center items-center bg-[#FDFAFA] bg-opacity-10">
+        <section className="relative inset-y-5 z-10 -mt-36 sm:-mt-44 md:-mt-52 w-full flex justify-center items-center bg-[#FDFAFA] bg-opacity-10">
           <div className="container w-[85%] md:w-90% max-w-[1000px] mt-[50px] mb-[50px] mr-auto ml-auto flex items-center justify-center">
             <div className="left relative hidden md:inset-y-5 z-10 md:w-[50%] min-h-[450px] bg-secondary md:flex items-center justify-center p-[30px] rounded-lg text-white">
               <div className=" content absolute min-h-[450px] w-full grid grid-cols-1 md:place-items-center md:justify-center md:px-6 sm:justify-items-center text-base font-medium">
@@ -63,7 +85,7 @@ const ContactUs = () => {
                         href="/"
                         className="transition-colors duration-300 text-white hover:text-teal-accent-400 text-sm"
                       >
-                        info@staging.squarefeet.xyz
+                        info@squarefeet.xyz
                       </a>
                     </li>
                   </ul>
@@ -80,30 +102,61 @@ const ContactUs = () => {
                     Don't be shy. Give us a call or drop us a line.
                   </p>
                 </div>
-                <form>
-                  <input
-                    type="text"
-                    className="block border border-grey-light w-full p-3 rounded mb-4 input input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium placeholder:text-sm"
-                    name="fullname"
-                    placeholder="Your Name"
-                  />
 
-                  <input
-                    type="email"
-                    className="block border border-grey-light w-full p-3 rounded mb-4 input input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium placeholder:text-sm"
-                    name="email"
-                    placeholder="Your Email"
-                  />
+                <form action="#" onSubmit={handleSubmit(onSubmit)}>
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      {...register("name", { required: true })}
+                      aria-invalid={errors.fullName ? "true" : "false"}
+                      className="border border-grey-light w-full p-3 rounded mb-4 input input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium placeholder:text-sm"
+                      placeholder="Your Name"
+                    />
+                    {errors.name?.type === "required" && (
+                      <p role="alert" className="text-red-800 font-semibold">
+                        * Full name is required
+                      </p>
+                    )}
+                  </div>
 
-                  <textarea
-                    type="text"
-                    id="message"
-                    rows="4"
-                    className="shadow-sm rounded-md p-3 outline-none w-full placeholder:text-sm input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium"
-                    placeholder="Type Your Message Here"
-                  ></textarea>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      {...register("email", { required: true })}
+                      aria-invalid={errors.fullName ? "true" : "false"}
+                      className=" border border-grey-light w-full p-3 rounded mb-4 input input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium placeholder:text-sm"
+                      placeholder="Your Email"
+                    />
+                    {errors.email?.type === "required" && (
+                      <p role="alert" className="text-red-800 font-semibold">
+                        * Email name is required
+                      </p>
+                    )}
+                  </div>
 
-                  <button className="text-sm md:text-base px-5 py-1 mt-8 border-primary border-solid border-2 rounded-lg text-white text-center btn-primary">
+                  <div>
+                    <textarea
+                      type="text"
+                      rows="4"
+                      name="query"
+                      {...register("query", { required: true })}
+                      aria-invalid={errors.fullName ? "true" : "false"}
+                      className="shadow-sm rounded-md p-3 outline-none w-full placeholder:text-sm input-bordered border-transparent focus:border-transparent focus:right-0 bg-secondary bg-opacity-10 placeholder-secondary placeholder-opacity-50 text-secondary font-medium"
+                      placeholder="Type Your Message Here"
+                    ></textarea>
+                    {errors.query?.type === "required" && (
+                      <p role="alert" className="text-red-800">
+                        * Text is required
+                      </p>
+                    )}
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="text-sm md:text-base px-5 py-1 mt-8 border-primary border-solid border-2 rounded-lg text-white text-center btn-primary"
+                  >
                     Send
                   </button>
                 </form>
