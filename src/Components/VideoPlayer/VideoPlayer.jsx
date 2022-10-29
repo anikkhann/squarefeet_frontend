@@ -19,9 +19,9 @@ const VideoPlayer = () => {
        
         </div>
         <div className="w-full md:w-1/2 px-3 py-5">
-          <h1 className="text-xl md:text-2xl text-black underline underline-offset-8">We provide the best service for you</h1>
+          <h1 className="text-xl md:text-2xl text-black underline underline-offset-8">The best property management platform</h1>
           <p className="py-3 text-base font-normal">
-          emonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+          Want to access all the services of property management from one place? Then SquareFeet is the one-stop solution you are looking for. Here, you can deal digitally with all types of bill collection including rent, book the nearest field/ community center/ doctor’s appointment online, virtually chat with your neighbours, share your daily life, and more.
           </p>
 
           <div className="flex py-3 text-base font-semibold">

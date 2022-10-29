@@ -14,14 +14,10 @@ const Home = () => {
           </div> */}
           {/* <button className="rounded-full opacity-20 text-black   bg-[#2DB28A]">Application</button> */}
           <h1 className="text-lg sm:text-xl md:text-3xl underline underline-offset-8">
-            Get our Free Mobile App
+          Get our Free Mobile App
           </h1>
           <p className="text-sm font-light sm:font-light md:text-base sm:text-sm md:py-2 py-2 sm:pb-2 ">
-            Download the SquareFeet app, and enjoy the digital services for your
-            home. Now you can pay the bills, get invoices, access the service
-            providers, book the nearest field/community center/ doctors chamber,
-            and, even communicate with the neighbours within seconds with many
-            more services!
+          Download the SquareFeet app, and enjoy the digital services for your home. Now you can pay the bills, get invoices, access the service providers, book the nearest field/community center/ doctors chamber, and, even communicate with the neighbours within seconds with many more services!
           </p>
           <div className="flex sm:flex-row  my-5 ">
             <a
